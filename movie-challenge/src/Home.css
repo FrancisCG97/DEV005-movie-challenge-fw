@@ -1,5 +1,4 @@
-
-/* RESPONSIVE MOBILE */
+/* ROOT */
 body {
 background-image:
 linear-gradient(to right bottom,
@@ -17,9 +16,75 @@ linear-gradient(to right bottom,
 #c6e6ff);
 }
 
-span {
+/* HEADER */
+.navbar-brand.mb-0.h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     color: #7BC6FF;
     font-size: 45px;
+    /* margin-left: -40px; */
+}
+.d-inline-block.align-text-top {
+    margin-left: -50px;
+    z-index: 1;
+}
+
+/* INPUT DE BÚSQUEDA */
+.form-control {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    width: 250px;
+    border-radius: 0px;
+    border-color: #062841;
+    color: black;
+    margin-left: 8px;
+    margin-top: -25px;
+}
+.btn.btn-outline-secondary{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: #A3D2F6;
+    border-radius: 8px;
+    border-color: #000000;
+    box-shadow: 2px 2px 4px #828585;
+    margin-left: -10px;
+    margin-top: -40px;
+    color: #000000;
+}
+
+/* CARRUSEL */
+.d-block {
+    width: 101.5px;
+    height: 152px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 50px;
+}
+
+/* CARDS */
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #B5D8FA;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #828585;
+    margin-top: 40px;
+}
+.img.rounded-start{
+    width: 100px;
+    height: 152px;
+    border-radius: 5px;
+}
+.card {
+    align-items: center;
+    justify-content: end;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 10px 0px 25px 0px;
 }
