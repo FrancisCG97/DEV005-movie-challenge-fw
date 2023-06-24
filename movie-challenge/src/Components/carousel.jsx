@@ -8,6 +8,7 @@ import eeao from '../Images/EEAO.jpg';
 // CARRUSEL IMÁGENES
 const Carousel = () => {
   // JS    
+  
   console.log('carrusel funciona')
 
   return (
@@ -21,22 +22,22 @@ const Carousel = () => {
       <div className="container-sm">
         <div className="row row-cols-auto">
           <div className="carousel-inner">
-            <div className="carousel-item active" data-interval="3000">
+            <div className="carousel-item active">
               <div className='row-col'>
                 <img src={spiderman} className="d-block" alt="Poster Spiderman Across the Spiderverse"></img>
               </div>
             </div>
-            <div className="carousel-item" data-interval="5000">
+            <div className="carousel-item">
               <div className='row-col'>
                 <img src={sisu} className="d-block" alt="Poster Sisu"></img>
               </div>
             </div>
-            <div className="carousel-item" data-interval="7000">
+            <div className="carousel-item">
               <div className='row-col'>
                 <img src={reality} className="d-block" alt="Poster Reality"></img>
               </div>
             </div>
-            <div className="carousel-item" data-interval="9000">
+            <div className="carousel-item">
               <div className='row-col'>
                 <img src={eeao} className="d-block" alt="Poster Everything Everywhere All at Once"></img>
               </div>

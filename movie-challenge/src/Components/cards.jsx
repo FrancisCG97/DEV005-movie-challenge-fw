@@ -4,18 +4,20 @@ import kotfm from '../Images/kotfm.jpg';
 import shawshank from '../Images/shawshank.jpg';
 import godfather from '../Images/godfather.jpg';
 
-// CARRUSEL IMÁGENES
+// IMÁGENES DE PELÍCULAS POPULARES
 const Card = () => {
   // JS    
-  console.log('card funciona')
+  
+  console.log('card funciona');
+
   return (
     <>
 
-    <h1> Películas populares </h1>
+      <h1> Películas <br></br> populares </h1>
       <div className="container-sm">
         <div className="card mb-3">
-        <div className="row row-cols-auto">
-          <div className='row-col'>
+          <div className="row row-cols-auto">
+            <div className='row-col'>
               <img src={kotfm} className="img rounded-start" alt="Poster Killers of The Flower Moon"></img>
             </div>
             <div className='row-col'>

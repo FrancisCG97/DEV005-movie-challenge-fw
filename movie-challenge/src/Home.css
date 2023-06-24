@@ -1,31 +1,36 @@
 /* ROOT */
+:root {
+    --toastify-color-dark: #062841;
+    --toastify-icon-color-error: var(--toastify-color-error);
+}
+
 body {
-background-image:
-linear-gradient(to right bottom,
-#062841, 
-#0f3e60,
-#195582,
-#236da5, 
-#2e86c9, 
-#4397da, 
-#55a8eb, 
-#67b9fd,
-#81c4fd,
-#98d0fe,
-#afdbfe,
-#c6e6ff);
+    background-image:
+        linear-gradient(to right bottom,
+            #062841,
+            #0f3e60,
+            #195582,
+            #236da5,
+            #2e86c9,
+            #4397da,
+            #55a8eb,
+            #67b9fd,
+            #81c4fd,
+            #98d0fe,
+            #afdbfe,
+            #c6e6ff);
 }
 
 /* HEADER */
-.navbar-brand.mb-0.h1 {
+.navbar-brand.h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     color: #7BC6FF;
-    font-size: 45px;
-    /* margin-left: -40px; */
+    font-size: 90px;
 }
+
 .d-inline-block.align-text-top {
-    margin-left: -50px;
+    margin-left: -100px;
     z-index: 1;
 }
 
@@ -33,32 +38,37 @@ linear-gradient(to right bottom,
 .form-control {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    width: 250px;
+    font-size: 25px;
+    width: 500px;
+    height: 50px;
     border-radius: 0px;
     border-color: #062841;
     color: black;
-    margin-left: 8px;
-    margin-top: -25px;
+    background-color: #E5F4FF;
+
 }
-.btn.btn-outline-secondary{
+
+.btn.btn-outline-secondary {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
     background-color: #A3D2F6;
     border-radius: 8px;
     border-color: #000000;
     box-shadow: 2px 2px 4px #828585;
-    margin-left: -10px;
-    margin-top: -40px;
     color: #000000;
 }
 
 /* CARRUSEL */
 .d-block {
-    width: 101.5px;
-    height: 152px;
+    width: 149px;
+    height: 215px;
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
+
 .carousel-item {
     display: flex;
     justify-content: center;
@@ -70,17 +80,19 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     color: #B5D8FA;
-    font-size: 30px;
+    font-size: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     text-shadow: 2px 2px 4px #828585;
     margin-top: 40px;
 }
-.img.rounded-start{
+
+.img.rounded-start {
     width: 100px;
     height: 152px;
     border-radius: 5px;
 }
+
 .card {
     align-items: center;
     justify-content: end;
