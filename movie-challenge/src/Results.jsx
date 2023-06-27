@@ -1,6 +1,6 @@
 // IMPORTS
 import Header from './Components/header';
-import MovieCards from './Components/movieCards';
+import MovieTable from './Components/movieTable';
 import ResultTitles from './Components/resultTitles';
 import './Home.css';
 
@@ -11,7 +11,7 @@ const Results = () => {
         <>
             <Header></Header>
             <ResultTitles></ResultTitles>
-            <MovieCards></MovieCards>
+            <MovieTable></MovieTable>
         </>
     )
 }

@@ -2,18 +2,22 @@
 // IMPORTS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import axios from 'axios';
+
+// INVESTIGAR CÓMO MOSTRAR TODO EN LA TABLA.
+// INVESTIGAR SI ES POSIBLE PONER TODAS LAS IMÁGENES.
 
 // BÚSQUEDA DE PELÍCULAS
 export default function Search() {
-
   const navigate = useNavigate();
+  // const initialMovies = [];
+  // const [currentMovies] = useState(initialMovies);
 
-   // FUNCIONALIDAD BOTÓN BUSCAR
+  // FUNCIONALIDAD BOTÓN BUSCAR
   const searchData = () => {
     const movie = document.getElementById('title').value;
     console.log(movie);
@@ -22,32 +26,37 @@ export default function Search() {
     if (movie.length < 1) {
       toast.error('Ingrese un título a buscar');
     } else {
-      navigate('/results');
+
+      // DATOS REQUERIDOS A LA API PARA LA BÚSQUEDA DE PELÍCULAS
+      const options = {
+        method: 'GET',
+        url: 'https://api.themoviedb.org/3/search/movie',
+        params: {
+          query: movie,
+          include_adult: 'false',
+          page: '1',
+        },
+        headers: {
+          accept: 'application/json',
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTczZDEyNmNmYjFlMTdkZmMwZjM1YWY1MjJmZjBlMCIsInN1YiI6IjY0OTBiMDk2NDJiZjAxMDEwMWJmZTU2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dtmKGUMqjtSdO5v4tL_rV_mpSa4JzVXhod6EgDhanto'
+        }
+      };
+
+      // ENTREGA DE DATOS REQUERIDOS A LA API
+      axios
+        .request(options)
+        .then(function (response) {
+          navigate('/results', { state: { options, movie, currentMovies: response.data } });
+
+          console.log(response.data.results[0].original_title);
+          console.log(response.data.results[0].release_date);
+          console.log(response.data.results[0].original_language);
+
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
     }
-
-    // DATOS REQUERIDOS A LA API PARA LA BÚSQUEDA DE PELÍCULAS
-    const options = {
-      method: 'GET',
-      url: 'https://api.themoviedb.org/3/search/movie',
-      params: {
-        query: movie,
-        include_adult: 'false',
-      },
-      headers: {
-        accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTczZDEyNmNmYjFlMTdkZmMwZjM1YWY1MjJmZjBlMCIsInN1YiI6IjY0OTBiMDk2NDJiZjAxMDEwMWJmZTU2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dtmKGUMqjtSdO5v4tL_rV_mpSa4JzVXhod6EgDhanto'
-      }
-    };
-
-    // ENTREGA DE DATOS REQUERIDOS A LA API
-    axios
-      .request(options)
-      .then(function (response) {
-        console.log(response.data);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
   }
 
   return (
@@ -66,8 +75,7 @@ export default function Search() {
               <input id='title' type="text" className="form-control" placeholder="¿Qué película buscas?" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
             </div>
             <div className='row-col'>
-              <button onClick={searchData} className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>
-            </div>
+              <button onClick={ searchData } className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>             </div>
           </div>
         </div>
       </div>
