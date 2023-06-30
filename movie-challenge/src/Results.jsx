@@ -1,7 +1,8 @@
 // IMPORTS
 import Header from './Components/header';
 import MovieTable from './Components/movieTable';
-import ResultTitles from './Components/resultTitles';
+// import Pagination from './Components/pagination';
+import Search from './Components/search';
 import './Home.css';
 
 const Results = () => {
@@ -10,7 +11,7 @@ const Results = () => {
     return (
         <>
             <Header></Header>
-            <ResultTitles></ResultTitles>
+            <Search></Search>
             <MovieTable></MovieTable>
         </>
     )

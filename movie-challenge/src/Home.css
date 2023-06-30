@@ -100,3 +100,23 @@ h1 {
     border-color: transparent;
     padding: 10px 0px 25px 0px;
 }
+
+/* CARDS RESULTADOS BÚSQUEDA */
+#movie-results {
+    border-color: #062841;
+    border-width: 2px;
+    margin-bottom: 10px;
+    background-image:
+        linear-gradient(to right bottom,
+        #55a8eb,
+        #67b9fd,
+        #81c4fd,
+        #98d0fe,
+        #afdbfe,
+        #c6e6ff);
+}
+.card-title,
+.card-text { 
+  color: #062841;
+  font-family: 'Quicksand', sans-serif;
+}

@@ -8,14 +8,9 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 
-// INVESTIGAR CÓMO MOSTRAR TODO EN LA TABLA.
-// INVESTIGAR SI ES POSIBLE PONER TODAS LAS IMÁGENES.
-
 // BÚSQUEDA DE PELÍCULAS
 export default function Search() {
   const navigate = useNavigate();
-  // const initialMovies = [];
-  // const [currentMovies] = useState(initialMovies);
 
   // FUNCIONALIDAD BOTÓN BUSCAR
   const searchData = () => {
@@ -47,11 +42,6 @@ export default function Search() {
         .request(options)
         .then(function (response) {
           navigate('/results', { state: { options, movie, currentMovies: response.data } });
-
-          console.log(response.data.results[0].original_title);
-          console.log(response.data.results[0].release_date);
-          console.log(response.data.results[0].original_language);
-
         })
         .catch(function (error) {
           console.error(error);
@@ -75,7 +65,8 @@ export default function Search() {
               <input id='title' type="text" className="form-control" placeholder="¿Qué película buscas?" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
             </div>
             <div className='row-col'>
-              <button onClick={ searchData } className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>             </div>
+              <button onClick={ searchData } className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>             
+              </div>
           </div>
         </div>
       </div>
