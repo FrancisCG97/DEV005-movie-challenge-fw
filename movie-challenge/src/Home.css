@@ -52,7 +52,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 25px;
-    width: 150px;
+    width: 120px;
     height: 50px;
     background-color: #A3D2F6;
     border-radius: 8px;
@@ -101,22 +101,53 @@ h1 {
     padding: 10px 0px 25px 0px;
 }
 
-/* CARDS RESULTADOS BÚSQUEDA */
+
+/* RESULTADOS BÚSQUEDA */
+
+/* CARDS RESULTADOS */
+a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #062841;
+}
+
 #movie-results {
     border-color: #062841;
     border-width: 2px;
     margin-bottom: 10px;
     background-image:
         linear-gradient(to right bottom,
-        #55a8eb,
-        #67b9fd,
-        #81c4fd,
-        #98d0fe,
-        #afdbfe,
-        #c6e6ff);
+            #55a8eb,
+            #67b9fd,
+            #81c4fd,
+            #98d0fe,
+            #afdbfe,
+            #c6e6ff);
 }
+
 .card-title,
-.card-text { 
-  color: #062841;
-  font-family: 'Quicksand', sans-serif;
+.card-text {
+    color: #062841;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* PÁGINA INFORMACIÓN COMPLETA */
+
+/* BOTÓN VOLVER */
+table {
+    margin-top: 15px;
+}
+
+.btn.btn-primary.me-md-2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    width: 100px;
+    height: 46px;
+    background-color: #A3D2F6;
+    border-radius: 8px;
+    border-color: #000000;
+    box-shadow: 2px 2px 4px #828585;
+    color: #000000;
 }

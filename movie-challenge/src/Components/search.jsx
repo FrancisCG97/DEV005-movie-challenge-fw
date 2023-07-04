@@ -3,7 +3,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import 'react-toastify/dist/ReactToastify.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
@@ -65,8 +65,8 @@ export default function Search() {
               <input id='title' type="text" className="form-control" placeholder="¿Qué película buscas?" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
             </div>
             <div className='row-col'>
-              <button onClick={ searchData } className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>             
-              </div>
+              <button onClick={searchData} className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>
+            </div>
           </div>
         </div>
       </div>
