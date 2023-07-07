@@ -4,7 +4,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const Pagination = () => {
 
-
     return (
         <>
             <nav aria-label="Page navigation example">

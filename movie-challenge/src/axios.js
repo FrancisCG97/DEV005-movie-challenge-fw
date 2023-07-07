@@ -2,30 +2,59 @@
 import axios from 'axios';
 
 // CONFIGURACIÓN
-const apiConfig = {
-  method: 'GET',
-  url: 'https://api.themoviedb.org/3/configuration',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTczZDEyNmNmYjFlMTdkZmMwZjM1YWY1MjJmZjBlMCIsInN1YiI6IjY0OTBiMDk2NDJiZjAxMDEwMWJmZTU2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dtmKGUMqjtSdO5v4tL_rV_mpSa4JzVXhod6EgDhanto'
-  }
-};
+export const imagesRequest = async () => {
+  try {
+    const response = await axios.get('https://api.themoviedb.org/3/configuration', {
+                  headers: {
+                      accept: 'application/json',
+                      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTczZDEyNmNmYjFlMTdkZmMwZjM1YWY1MjJmZjBlMCIsInN1YiI6IjY0OTBiMDk2NDJiZjAxMDEwMWJmZTU2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dtmKGUMqjtSdO5v4tL_rV_mpSa4JzVXhod6EgDhanto'
+                  }
+              });
 
-axios
-  .request(apiConfig)
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+              console.log(response.data);
 
+          } catch (error) {
+              console.error(error);
+          }
+      };
 
+// const apiConfig = {
+//   method: 'GET',
+//   url: 'https://api.themoviedb.org/3/configuration',
+//   headers: {
+//     accept: 'application/json',
+//     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTczZDEyNmNmYjFlMTdkZmMwZjM1YWY1MjJmZjBlMCIsInN1YiI6IjY0OTBiMDk2NDJiZjAxMDEwMWJmZTU2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dtmKGUMqjtSdO5v4tL_rV_mpSa4JzVXhod6EgDhanto'
+//   }
+// };
 
+// axios
+//   .request(apiConfig)
+//   .then(function (response) {
+//     console.log(response.data);
+//   })
+//   .catch(function (error) {
+//     console.error(error);
+//   });
 
+// POPULAR
+// const popular = {
+//   method: 'GET',
+//   url: 'https://api.themoviedb.org/3/movie/popular',
+//   params: {language: 'en-US', page: '1'},
+//   headers: {
+//     accept: 'application/json',
+//     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MTczZDEyNmNmYjFlMTdkZmMwZjM1YWY1MjJmZjBlMCIsInN1YiI6IjY0OTBiMDk2NDJiZjAxMDEwMWJmZTU2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dtmKGUMqjtSdO5v4tL_rV_mpSa4JzVXhod6EgDhanto'
+//   }
+// };
 
-
-
+// axios
+//   .request(popular)
+//   .then(function (response) {
+//     console.log(response.data);
+  // })
+  // .catch(function (error) {
+  //   console.error(error);
+  // });
 
 
 

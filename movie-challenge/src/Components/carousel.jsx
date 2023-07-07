@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+// import { popular } from "../axios";
 import spiderman from '../Images/spiderman.jpg';
 import sisu from '../Images/sisu.jpg';
 import reality from '../Images/reality.jpg';
@@ -8,7 +9,7 @@ import eeao from '../Images/EEAO.jpg';
 // CARRUSEL IMÁGENES
 const Carousel = () => {
   // JS    
-  
+
   console.log('carrusel funciona')
 
   return (
@@ -19,7 +20,7 @@ const Carousel = () => {
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-      <div className="container-sm">
+      <div className="container-l">
         <div className="row row-cols-auto">
           <div className="carousel-inner">
             <div className="carousel-item active">

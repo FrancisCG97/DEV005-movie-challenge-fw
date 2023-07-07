@@ -62,7 +62,7 @@ export default function Search() {
         <div className="input-group mb-3">
           <div className="row row-cols-auto">
             <div className='row-col'>
-              <input id='title' type="text" className="form-control" placeholder="¿Qué película buscas?" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
+              <input id='title' type="text" maxLength={40} className="form-control" placeholder="¿Qué película buscas?" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
             </div>
             <div className='row-col'>
               <button onClick={searchData} className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>
