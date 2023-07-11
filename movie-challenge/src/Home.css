@@ -73,7 +73,6 @@ body {
 }
 
 .d-inline-block.align-text-top {
-    /* margin-left: -100px; */
     z-index: 1;
 }
 
@@ -82,6 +81,7 @@ body {
     margin: 0px;
     display: flex;
     justify-content: right;
+    align-items: baseline;
 }
 
 .form-control {
@@ -128,10 +128,22 @@ body {
 .carousel-item {
     display: flex;
     justify-content: center;
+    margin: 0%;
 }
 
 .carousel-indicators {
     margin: 0%;
+}
+
+.carousel-inner {
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-col {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* CARDS */
