@@ -39,8 +39,8 @@ const MovieTable = () => {
     }, []);
 
     const imagesBaseUrl = moviesImages?.images?.base_url;
-    const posterSize = moviesImages?.images?.poster_sizes[4];
-  
+    const posterSize = moviesImages?.images?.poster_sizes[1];
+
     // VER MÁS INFORMACIÓN
     const goInfo = (movie) => {
         navigate('/movieInfoPage', { state: { imagesBaseUrl, posterSize, currentMovies: movie } });
@@ -49,23 +49,27 @@ const MovieTable = () => {
 
     return (
         <>
-         {imagesBaseUrl && posterSize && (
-            <div id="movieInfoContainer">
-                <div className="row row-cols-1 row-cols-md-2 g-4">
-                    {Array.isArray(title) &&
-                        title.map((movie, index) => (
-                            <div id="movie-results" className="card" key={index}>
-                                <img src={`${imagesBaseUrl}${posterSize}${movie.poster_path}`} className="card-img-top" alt="Poster película" />
-                                <div className="card-body">
-                                    <h5 className="card-title">{movie.title}</h5>
-                                    <p className="card-text">{movie.release_date}</p>
-                                    <p className="card-text">{'⭐' + parseFloat(movie.vote_average).toFixed(1)}</p>
-                                    <button onClick={() => goInfo(movie)} className="btn btn-primary" type="submit"> Ver más... </button>
-                                </div>
-                            </div>
-                        ))}
+            {imagesBaseUrl && posterSize && (
+                <div id="movieInfoContainer" className="container-fluid">
+                    <section className="movie-cards">
+                        <div className="row justify-content-evenly">
+                            {/* <div className=""> */}
+                                {Array.isArray(title) &&
+                                    title.map((movie, index) => (
+                                        <div id="movie-results" className="col col-xs-1 col-sm-8 col-md-6 col-lg-3 m-2" key={index}>
+                                            <img src={`${imagesBaseUrl}${posterSize}${movie.poster_path}`} className="card-img-top" alt="Poster película" />
+                                            <div className="card-body overflow-visible">
+                                                <h5 className="card-title">{movie.title}</h5>
+                                                <p className="card-text">{movie.release_date}</p>
+                                                <p className="card-text">{'⭐' + parseFloat(movie.vote_average).toFixed(1)}</p>
+                                                <button onClick={() => goInfo(movie)} className="btn btn-primary" type="submit"> Ver más... </button>
+                                            </div>
+                                        </div>
+                                    ))}
+                            {/* </div> */}
+                        </div>
+                    </section>
                 </div>
-            </div>
             )}
         </>
     );
