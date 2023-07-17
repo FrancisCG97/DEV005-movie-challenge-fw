@@ -12,7 +12,7 @@ import MovieInfoPage from "./MovieInfoPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {

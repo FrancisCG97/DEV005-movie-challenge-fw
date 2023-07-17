@@ -20,7 +20,7 @@ const Carousel = () => {
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-      <div className="container-l">
+      <div className="container-fluid">
         <div className="row row-cols-auto">
           <div className="carousel-inner">
             <div className="carousel-item active">

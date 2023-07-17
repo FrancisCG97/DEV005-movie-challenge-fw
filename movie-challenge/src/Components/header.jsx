@@ -1,4 +1,5 @@
 // IMPORTS
+// import './Home.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useNavigate } from 'react-router-dom';
