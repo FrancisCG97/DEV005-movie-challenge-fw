@@ -1,16 +1,18 @@
 // IMPORTS
+import { Router } from 'react-router-dom';
 import Header from './Components/header';
 import MovieInfoContainer from './Components/movieInfoContainer';
 import './Home.css';
 
 const MovieInfoPage = () => {
-    //JS
 
     return (
-        <>
-            <Header></Header>
-            <MovieInfoContainer></MovieInfoContainer>
-        </>
+        <Router>
+            <>
+                <Header></Header>
+                <MovieInfoContainer></MovieInfoContainer>
+            </>
+        </Router>
     )
 }
 

@@ -2,7 +2,7 @@
 // IMPORTS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
