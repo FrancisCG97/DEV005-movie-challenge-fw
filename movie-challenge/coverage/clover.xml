@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689710262276" clover="3.2.0">
-  <project timestamp="1689710262276" name="All files">
-    <metrics statements="17" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1" elements="25" coveredelements="3" complexity="0" loc="17" ncloc="17" packages="1" files="2" classes="2"/>
-    <file name="header.jsx" path="C:\Users\fcarr\OneDrive\Documentos\DEV005-movie-challenge-fw\movie-challenge\src\Components\header.jsx">
-      <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="12" count="5" type="stmt"/>
-      <line num="13" count="0" type="stmt"/>
-      <line num="14" count="0" type="stmt"/>
-      <line num="17" count="0" type="stmt"/>
-      <line num="19" count="0" type="stmt"/>
-    </file>
-    <file name="search.jsx" path="C:\Users\fcarr\OneDrive\Documentos\DEV005-movie-challenge-fw\movie-challenge\src\Components\search.jsx">
-      <metrics statements="11" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <line num="13" count="0" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
-      <line num="17" count="0" type="stmt"/>
-      <line num="18" count="0" type="stmt"/>
-      <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="22" count="0" type="stmt"/>
-      <line num="26" count="0" type="stmt"/>
-      <line num="41" count="0" type="stmt"/>
-      <line num="44" count="0" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
-      <line num="52" count="0" type="stmt"/>
-    </file>
+<coverage generated="1689790396152" clover="3.2.0">
+  <project timestamp="1689790396153" name="All files">
+    <metrics statements="25" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="5" elements="36" coveredelements="16" complexity="0" loc="25" ncloc="25" packages="2" files="5" classes="5"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Home.jsx" path="C:\Users\fcarr\OneDrive\Documentos\DEV005-movie-challenge-fw\movie-challenge\src\Home.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Components">
+      <metrics statements="23" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="4"/>
+      <file name="cards.jsx" path="C:\Users\fcarr\OneDrive\Documentos\DEV005-movie-challenge-fw\movie-challenge\src\Components\cards.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+      <file name="carousel.jsx" path="C:\Users\fcarr\OneDrive\Documentos\DEV005-movie-challenge-fw\movie-challenge\src\Components\carousel.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="header.jsx" path="C:\Users\fcarr\OneDrive\Documentos\DEV005-movie-challenge-fw\movie-challenge\src\Components\header.jsx">
+        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+      <file name="search.jsx" path="C:\Users\fcarr\OneDrive\Documentos\DEV005-movie-challenge-fw\movie-challenge\src\Components\search.jsx">
+        <metrics statements="11" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

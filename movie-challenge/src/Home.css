@@ -62,34 +62,32 @@ body {
     cursor: pointer;
 }
 
-#camera-image {
+#camera {
     z-index: 1;
     margin-left: -70px;
 }
 
 /* INPUT DE BÚSQUEDA */
 .input-group.mb-3 {
+    width: 100%;
     margin: 0px;
     display: flex;
-
     flex-direction: row;
-    /* flex-wrap: nowrap; */
 }
 
 .form-control {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    /* font-size: 25px; */
     border-radius: 0px;
     border-color: #062841;
     color: black;
     background-color: #E5F4FF;
+    width: 100%;
 }
 
 .btn.btn-outline-secondary {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    /* font-size: 25px; */
     background-color: #A3D2F6;
     border-radius: 8px;
     border-color: #000000;
@@ -100,6 +98,16 @@ body {
 #search-input{
     margin: 0px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#container-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
 /* CARRUSEL */
