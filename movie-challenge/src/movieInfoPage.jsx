@@ -4,13 +4,12 @@ import MovieInfoContainer from './Components/movieInfoContainer';
 import './Home.css';
 
 const MovieInfoPage = () => {
-    //JS
 
     return (
-        <>
-            <Header></Header>
-            <MovieInfoContainer></MovieInfoContainer>
-        </>
+            <>
+                <Header></Header>
+                <MovieInfoContainer></MovieInfoContainer>
+            </>
     )
 }
 

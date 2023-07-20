@@ -2,7 +2,7 @@
 // IMPORTS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
@@ -53,10 +53,9 @@ const MovieTable = () => {
                 <div id="movieInfoContainer" className="container-fluid">
                     <section className="movie-cards">
                         <div className="row justify-content-evenly">
-                            {/* <div className=""> */}
                                 {Array.isArray(title) &&
                                     title.map((movie, index) => (
-                                        <div id="movie-results" className="col col-xs-1 col-sm-8 col-md-6 col-lg-3 m-2" key={index}>
+                                        <div id="movie-results" className="col col-xs-1 col-md-4 col-lg-3 m-2" key={index}>
                                             <img src={`${imagesBaseUrl}${posterSize}${movie.poster_path}`} className="card-img-top" alt="Poster película" />
                                             <div className="card-body overflow-visible">
                                                 <h5 className="card-title">{movie.title}</h5>
@@ -66,7 +65,6 @@ const MovieTable = () => {
                                             </div>
                                         </div>
                                     ))}
-                            {/* </div> */}
                         </div>
                     </section>
                 </div>

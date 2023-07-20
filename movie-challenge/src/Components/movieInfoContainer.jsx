@@ -1,8 +1,8 @@
+/* eslint-disable no-unused-vars */
 // IMPORTS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { useLocation } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const MovieInfoContainer = () => {
 
@@ -25,31 +25,26 @@ const MovieInfoContainer = () => {
             </div>
             <div className="container">
             </div>
-            <table className="table table-borderless">
+            <table className="table table-responsive">
                 <><thead>
                     <tr>
-                        <th scope="col">{currentMovies.title}</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <th scope="col" className="col col-4 col-md-4 col-lg-4">{currentMovies.title}</th>
+                        <td><p>Título original:
+                            <br></br>
+                            {currentMovies.original_title}</p> </td>
                     </tr>
                 </thead><tbody>
                         <tr>
-                            <th scope="row"></th>
-                            <td>Lenguaje original: {currentMovies.original_language}</td>
-                            <td></td>
-                            <td>Título original: {currentMovies.original_title}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"></th>
-                            <td>Fecha de estreno: {currentMovies.release_date}</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <th scope="row"><img src={imagesBaseUrl + posterSize + currentMovies.poster_path} alt="Poster película" className="img-fluid" /></th>
-                            <td colSpan="2">Sinopsis:</td>
-                            <td className="col-md-6">{currentMovies.overview}</td>
+                            <td><p>Lenguaje original:
+                                <br></br>
+                                {currentMovies.original_language}</p>
+                                <p>Fecha de estreno:
+                                    <br></br>
+                                    {currentMovies.release_date}</p>
+                                <p>Sinopsis:
+                                    <br></br>
+                                    {currentMovies.overview} </p></td>
                         </tr>
                     </tbody></>
             </table>

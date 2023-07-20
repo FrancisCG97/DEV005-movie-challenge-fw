@@ -2,15 +2,12 @@
 :root {
     --toastify-color-dark: #062841;
     --toastify-icon-color-error: var(--toastify-color-error);
-    /* height: auto;
-    width: 100%; */
     margin: 0%;
     padding: 0%;
+    height: 100%;
 }
 
 html {
-    /* height: 100%;
-    width: 100%; */
     margin: 0%;
     padding: 0%;
 }
@@ -30,6 +27,7 @@ body {
             #98d0fe,
             #afdbfe,
             #c6e6ff);
+    background-size: cover;
 }
 
 /* HOME */
@@ -39,27 +37,17 @@ body {
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
     margin: 0px;
     padding: 0%
 }
 
 .col {
-    /* height: fit-content;
-    width: fit-content; */
     margin: 0px;
-    padding: 0%
+    padding: 0%;
 }
 
 
 /* HEADER */
-.container-fluid {
-    padding: 0%;
-    margin: 0%;
-    width: fit-content;
-}
-
 .navbar {
     padding: 0%;
     width: fit-content;
@@ -74,39 +62,52 @@ body {
     cursor: pointer;
 }
 
-.d-inline-block.align-text-top {
+#camera {
     z-index: 1;
+    margin-left: -70px;
 }
 
 /* INPUT DE BÚSQUEDA */
 .input-group.mb-3 {
+    width: 100%;
     margin: 0px;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    flex-direction: row;
 }
 
 .form-control {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 25px;
     border-radius: 0px;
     border-color: #062841;
     color: black;
     background-color: #E5F4FF;
+    width: 100%;
 }
 
 .btn.btn-outline-secondary {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 25px;
-    width: 120px;
-    height: 50px;
     background-color: #A3D2F6;
     border-radius: 8px;
     border-color: #000000;
     box-shadow: 2px 2px 4px #828585;
     color: #000000;
+}
+
+#search-input{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#container-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
 /* CARRUSEL */
@@ -194,7 +195,6 @@ h1 {
 #movie-results {
     border-color: #062841;
     border-width: 2px;
-    /* margin-bottom: 10px; */
     background-image:
         linear-gradient(to right bottom,
             #55a8eb,
@@ -206,7 +206,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /* margin: 10px 10px; */
 }
 
 .card-title,
