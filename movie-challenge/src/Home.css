@@ -5,7 +5,7 @@
     margin: 0%;
     padding: 0%;
     height: 100%;
-    width: 100%;
+    width: fit-content;
 }
 
 html {
@@ -33,17 +33,21 @@ body {
     background-size: cover;
 }
 
-/* HOME */
+
+
+/* ------------------------HOME------------------------ */
 .container {
     margin: 0%;
     padding: 0%;
-    width: 100%;
+    width: auto;
 }
 
 .row {
     margin: 0px;
     padding: 0%;
+    width: fit-content;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -51,6 +55,7 @@ body {
     margin: 0px;
     padding: 0%;
 }
+
 
 
 /* HEADER */
@@ -80,12 +85,14 @@ body {
     justify-content: left;
 }
 
+
+
 /* INPUT DE BÚSQUEDA */
 .input-group.mb-3 {
-    width: max-content;
-    margin: 0px;
+    margin: 0%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: right;
 }
 
 .form-control {
@@ -95,7 +102,8 @@ body {
     border-color: #062841;
     color: black;
     background-color: #E5F4FF;
-    width: 100%;
+    width: 50%;
+    height: auto;
 }
 
 .btn.btn-outline-secondary {
@@ -106,27 +114,19 @@ body {
     border-color: #000000;
     box-shadow: 2px 2px 4px #828585;
     color: #000000;
-}
-
-#search-input{
-    margin: 0px;
-    width: max-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#input-gr{
-    width: max-content;
-    margin: 0px;
-    padding: 0%;
+    height: 100%;
 }
 
 #container-section{
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: right;
 }
+
+
 
 /* CARRUSEL */
 .carousel-control-prev {
@@ -148,6 +148,7 @@ body {
 .carousel-item,
 .carousel-item.active {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 0%;
 }
@@ -166,6 +167,11 @@ body {
     display: flex;
     justify-content: center;
 }
+
+
+
+
+
 
 /* CARDS */
 .img.rounded-start {
@@ -206,7 +212,7 @@ body {
 }
 
 
-/* RESULTADOS BÚSQUEDA */
+/* ------------------------RESULTADOS BÚSQUEDA------------------------ */
 
 /* CARDS RESULTADOS */
 #movie-results {
@@ -241,7 +247,7 @@ body {
 }
 
 
-/* PÁGINA INFORMACIÓN COMPLETA */
+/* ------------------------PÁGINA INFORMACIÓN COMPLETA------------------------ */
 /* BOTÓN VOLVER */
 table {
     margin-top: 15px;

@@ -58,19 +58,17 @@ export default function Search() {
         closeOnClick
         theme="dark"
       />
-      <div className='row'>
-          <div id="container-section" className="container">
-            <div id="input-gr">
-              <div className="col-12 col-md-12 col-lg-12 col-xl-12">
-                <div className="input-group mb-3">
-                  <div id="search-input">
-                    <input id='title' type="text" maxLength={40} className="form-control" placeholder="¿Qué película buscas?" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
-                  </div>
-                    <button onClick={searchData} className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>
-                </div>
-              </div>
-            </div>
+      <div id="container-section" className="container">
+        <div className="col-10 col-md-8 col-lg-6 col-xl-6">
+          <div className="input-group mb-3">
+            {/* <div id="search-input"> */}
+              <input id='title' type="text" maxLength={40} className="form-control" placeholder="¿Qué película buscas?" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
+            {/* </div>
+            <div id="search-button"> */}
+            <button onClick={searchData} className="btn btn-outline-secondary" type="submit" id="button-addon2"> Buscar </button>
+          {/* </div> */}
           </div>
+        </div>
       </div>
     </>
   )
