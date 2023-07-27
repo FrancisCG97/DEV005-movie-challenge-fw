@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./Home.jsx";
 import Results from "./Results.jsx";
-import MovieInfoPage from "./MovieInfoPage.jsx";
+import MovieInfoPage from "./movieInfoPage.jsx";
 
 const router = createBrowserRouter([
   {
