@@ -21,7 +21,7 @@ const Carousel = () => {
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
       <div className="row">
-        <div className='col-10 col-md-10 col-lg-10 col-xl-10'>
+        <div className='col-10 col-md-10 col-lg-6 col-xl-6'>
           <div className="container-fluid">
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -34,9 +34,6 @@ const Carousel = () => {
             <div className="carousel-item">
               <img src={reality} className="d-block" alt="Poster Reality"></img>
             </div>
-            {/* <div className="carousel-item">
-              <img src={eeao} className="d-block" alt="Poster Everything Everywhere All at Once"></img>
-            </div> */}
           </div>
         </div>
 

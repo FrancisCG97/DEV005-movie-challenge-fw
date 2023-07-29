@@ -20,15 +20,13 @@ const MovieInfoContainer = () => {
 
     return (
         <>
-            <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div className="d-grid gap-2 d-md-flex justify-content-end">
                 <button onClick={back} className="btn btn-primary me-md-2" type="button"> Volver a resultados </button>
             </div>
-            <div className="container">
-            </div>
-            <table className="table table-responsive">
+            <table className="table">
                 <><thead>
                     <tr>
-                        <th scope="col" className="col col-4 col-md-4 col-lg-4">{currentMovies.title}</th>
+                        <th id="movie-title" scope="col" className="col-6 col-md-4 col-lg-4">{currentMovies.title}</th>
                         <td><p>Título original:
                             <br></br>
                             {currentMovies.original_title}</p> </td>

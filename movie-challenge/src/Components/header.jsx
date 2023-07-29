@@ -26,7 +26,7 @@ const Header = () => {
                 <img src={camera} id='camera' alt="camera" width="250" height="179" className="d-inline-block align-text-top"></img>
               </div>
               <div className='col-9 col-md-9 col-lg-9 col-xl-10'>
-                <h1 onClick={back} className="navbar-brand h1"> Moviefy </h1>
+                <h1 onClick={back} className="navbar-brand"> Moviefy </h1>
               </div>
             </div>
           </nav>

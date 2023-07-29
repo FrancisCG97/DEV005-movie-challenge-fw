@@ -52,12 +52,12 @@ const MovieTable = () => {
             {imagesBaseUrl && posterSize && (
                 <div id="movieInfoContainer" className="container-fluid">
                     <section className="movie-cards">
-                        <div className="row justify-content-evenly">
+                        <div id="result-cards" className="row">
                                 {Array.isArray(title) &&
                                     title.map((movie, index) => (
-                                        <div id="movie-results" className="col col-xs-1 col-md-4 col-lg-3 m-2" key={index}>
+                                        <div id="movie-results" className="col-12 col-md-5 col-lg-4" key={index}>
                                             <img src={`${imagesBaseUrl}${posterSize}${movie.poster_path}`} className="card-img-top" alt="Poster película" />
-                                            <div className="card-body overflow-visible">
+                                            <div className="card-body">
                                                 <h5 className="card-title">{movie.title}</h5>
                                                 <p className="card-text">{movie.release_date}</p>
                                                 <p className="card-text">{'⭐' + parseFloat(movie.vote_average).toFixed(1)}</p>
